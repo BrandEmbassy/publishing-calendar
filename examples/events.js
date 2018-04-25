@@ -92,9 +92,15 @@ export default [
     end: new Date(2015, 3, 22, 2, 0, 0),
   },
   {
-    id: 14,
-    title: 'Today',
-    start: new Date(new Date().setHours(new Date().getHours() - 3)),
+    id: 15,
+    title: 'Today future',
+    start: new Date(new Date().setHours(new Date().getHours() + 3)),
     end: new Date(new Date().setHours(new Date().getHours() + 3)),
+  },
+  {
+    id: 14,
+    title: 'Today past',
+    start: new Date(new Date().setHours(new Date().getHours() - 3)),
+    end: new Date(new Date().setHours(new Date().getHours() - 3)),
   },
 ]

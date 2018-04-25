@@ -47,36 +47,12 @@ class Example extends React.Component {
 
     return (
       <div className="app">
-        <div className="jumbotron">
-          <div className="container">
-            <h1>
-              Big Calendar <i className="fa fa-calendar" />
-            </h1>
-            <p>such enterprise, very business.</p>
-            <p>
-              <a href="#intro">
-                <i className="fa fa-play" /> Getting started
-              </a>
-              {' | '}
-              <a href="#api">
-                <i className="fa fa-book" /> API documentation
-              </a>
-              {' | '}
-              <a
-                target="_blank"
-                href="https://github.com/intljusticemission/react-big-calendar"
-              >
-                <i className="fa fa-github" /> github
-              </a>
-            </p>
-          </div>
-        </div>
         <div className="examples">
           <header>
             <ul className="examples--list list-unstyled">
               <li className={cn({ active: selected === 'basic' })}>
                 <a href="#" onClick={this.select.bind(null, 'basic')}>
-                  Basic
+                  Publishing
                 </a>
               </li>
               <li className={cn({ active: selected === 'selectable' })}>
@@ -122,14 +98,6 @@ class Example extends React.Component {
             </ul>
           </header>
           <div className="example">
-            <div className="view-source">
-              <a target="_blank" href={demoRoot + '/' + selected + '.js'}>
-                <strong>
-                  <i className="fa fa-code" />
-                  {' View example source code'}
-                </strong>
-              </a>
-            </div>
             <Current />
           </div>
         </div>
