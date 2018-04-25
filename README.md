@@ -12,8 +12,8 @@ element has a height, or the calendar won't be visible.
 ## Run examples locally
 
 ```
-$ git clone git@github.com:intljusticemission/react-big-calendar.git
-$ cd react-big-calendar
+$ git clone git@github.com:BrandEmbassy/publishing-calendar.git
+$ cd publishing-calendar
 $ npm install
 $ npm run examples
 ```
