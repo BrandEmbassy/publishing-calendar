@@ -9,6 +9,8 @@ forked from https://github.com/intljusticemission/react-big-calendar
 Include `publishing-calendar/lib/css/react-big-calendar.css` for styles, and make sure your calendar's container
 element has a height, or the calendar won't be visible.
 
+ **TBD:** new UI
+
 ## Run examples locally
 
 ```
