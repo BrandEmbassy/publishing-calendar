@@ -35,7 +35,7 @@ function EventDay({ event }) {
 let Basic = () => (
   <BigCalendar
     views={['month', 'day_list']}
-    drilldownView="day"
+    drilldownView="day_list"
     startAccessor="start"
     endAccessor="end"
     popup={true}

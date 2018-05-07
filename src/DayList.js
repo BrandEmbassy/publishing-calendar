@@ -28,7 +28,7 @@ class DayList extends React.Component {
           CustomEventComponent ? (
             <CustomEventComponent key={event.id} event={event} />
           ) : (
-            <div key={event.id}>{event.title}</div>
+            <div key={event.id}>{'USE CUSTOM COMPONENT FOR YOUR EVENTS'}</div>
           )
         )
       }
