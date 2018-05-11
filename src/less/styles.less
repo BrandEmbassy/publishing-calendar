@@ -37,16 +37,18 @@
 }
 
 .rbc-off-range {
-  color: @out-of-range-color;
+  color: @out-of-range-color !important;
 }
 
 .rbc-off-range-bg {
-  background: @out-of-range-bg-color;
+  background: @out-of-range-bg-color !important;
 }
 
 .rbc-header {
   overflow: hidden;
   flex: 1 0 0%;
+  height: 30px;
+  line-height: 30px;
   text-overflow: ellipsis;
   white-space: nowrap;
   padding: 0 3px;
@@ -56,6 +58,7 @@
   font-size: 90%;
   min-height: 0;
   border-bottom: 1px solid @cell-border;
+  background-color: #fff;
 
   & + & {
     border-left: 1px solid @cell-border;

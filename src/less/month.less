@@ -39,6 +39,7 @@
   width: 100%;
   user-select: none;
   -webkit-user-select: none;
+  border-radius: 3px;
 
   height: 100%; // ie-fix
 }
@@ -66,8 +67,10 @@
 .rbc-date-cell {
   flex: 1 1 0;
   min-width: 0;
-  padding-right: 5px;
-  text-align: right;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 6px;
+  text-align: left;
 
   &.rbc-now {
     font-weight: bold;
@@ -91,6 +94,7 @@
 
 .rbc-day-bg {
   flex: 1 0 0%;
+  background-color: #fff;
 
   & + & {
     border-left: 1px solid @cell-border;
