@@ -13,6 +13,7 @@
     flex-grow:1;
     padding: 0 10px;
     text-align: center;
+    font-weight: 600;
   }
 
   & button {
@@ -31,32 +32,37 @@
     line-height: normal;
     white-space: nowrap;
     background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: background .1s;
 
     &:active,
     &.rbc-active {
       background-image: none;
-      box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+      box-shadow: none;
       background-color: @active-background;
-      border-color: @active-border;
+      // border-color: @active-border;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+
 
       &:hover,
       &:focus {
         color: @btn-color;
         background-color: darken(@btn-bg, 17%);
-        border-color: darken(@btn-border, 25%);
+        // border-color: darken(@btn-border, 25%);
       }
     }
 
     &:focus {
       color: @btn-color;
       background-color: @active-background;
-      border-color: @active-border;
+      // border-color: @active-border;
     }
 
     &:hover {
       color: @btn-color;
       background-color: @active-background;
-          border-color: @active-border;
+          // border-color: @active-border;
     }
   }
 }

@@ -83,9 +83,13 @@ class BackgroundCells extends React.Component {
                   className,
                   selected && 'rbc-selected-cell',
                   dates.eq(date, current, 'day') && 'rbc-today',
+                  dates.lt(date, current, 'day') && 'rbc-past',
                   currentDate &&
-                    dates.month(currentDate) !== dates.month(date) &&
-                    'rbc-off-range-bg'
+                    dates.month(currentDate) > dates.month(date) &&
+                    'rbc-off-range-past-bg',
+                  currentDate &&
+                    dates.month(currentDate) > dates.month(date) &&
+                    'rbc-off-range-future-bg'
                 )}
               />
             </Wrapper>
