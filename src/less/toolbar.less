@@ -1,6 +1,6 @@
 @import './variables.less';
 
-@active-background: darken(@btn-bg, 10%);
+@active-background: #f5f5f5;
 @active-border: darken(@btn-border, 12%);
 
 .rbc-toolbar {
@@ -34,35 +34,30 @@
     background-color: #fff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     outline: none;
-    transition: background .1s;
+    transition: background .1s, color .1s;
 
     &:active,
     &.rbc-active {
       background-image: none;
       box-shadow: none;
       background-color: @active-background;
-      // border-color: @active-border;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
 
 
       &:hover,
       &:focus {
+        background-color: @active-background;
         color: @btn-color;
-        background-color: darken(@btn-bg, 17%);
-        // border-color: darken(@btn-border, 25%);
+        cursor: default;
       }
     }
 
     &:focus {
-      color: @btn-color;
-      background-color: @active-background;
-      // border-color: @active-border;
+      color: darken(@btn-color, 100%);
     }
 
     &:hover {
-      color: @btn-color;
-      background-color: @active-background;
-          // border-color: @active-border;
+      color: darken(@btn-color, 100%);
     }
   }
 }
