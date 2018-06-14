@@ -34,7 +34,7 @@ class DayList extends React.Component {
       }
     })
 
-    return <div>{EventComponents}</div>
+    return <div class="rbc-day-list-view">{EventComponents}</div>
   }
 }
 
